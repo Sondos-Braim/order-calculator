@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asac Order Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg">
+
+    <section>
+        <h1> ASAC Order Calculator</h1>
+        <form id="form" action="">
+            <label for="del">Delievery fee </label>
+            <input type="number" name="fee">
+            <br />
+            <label for="name">Name</label>
+            <input type="string" name="name">
+            <br />
+            <!-- <p id="validation"></p> -->
+            <br />
+            <label for="del">Order </label>
+            <input type="string" name="order">
+            <br />
+            <label for="del">Quantity </label>
+            <input type="number" step="any" name="one">
+            <br />
+            <label for="del"> Price </label>
+            <input type="number" step="any" name="money">
+            <br />
+            <button type="submit">Place Order</button>
+
+        </form>
+        <div id="result"></div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>

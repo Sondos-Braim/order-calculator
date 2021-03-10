@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+h1 {
+  margin-left:25%;
+  background-image: linear-gradient(180deg, #8e0e00
+,#1f1c18);
+  font-family: lobster;
+  background-clip: text;
+  font-size: 2.5em ;
+  /* text-shadow: -2px 0px #8e0e00 ;  */
+  /* text-fill-color: transparent; */
+   background-color: #f3ec78;
+   -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+form{
+  border-radius: 5% ; 
+  background-color:rgba(63, 51, 51, 0.701);
+  color: white;
+  width: 30%;
+  height: 100% ;
+  margin-left: 10%;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  flex-direction: column ;
+
+}
+form:hover{
+  box-shadow: 0 10px 30px rgba(145, 92, 182, .4);
+}
+
+div{
+    display:inline-block;
+    margin-left: 40px
+}
+input , button , label{
+  text-align: center;
+  font-size: 18pt ;
+  height: 17% ;
+  width: 50% ;
+  margin-left:20%;
+  margin-top: 1% ;
+}
+.bg {
+ height: 100%;
+  background-image: url("http://st.depositphotos.com/2576363/4639/i/450/depositphotos_46392931-Italian-food-background.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+body, html {
+  height: 100%;
+}
+
+button {
+  background-image: linear-gradient(45deg, #8e0e00
+,#1f1c18);
+ font-family: sans-serif;
+
+font-size: 12pt ;
+
+border-radius: 30px; /* Curve of border corners */
+ 
+text-transform: uppercase; 
+ 
+color:silver; 
+margin-bottom: 3%;
+width: 40% ;
+margin-left: 30%; 
+height: 20% ;
+}
+button:hover{
+   color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+table{
+  margin-top: 30px;
+  font-family: lobster;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left:30%;
+    background-color: white;
+    text-align: center
+}
+table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+table th,
+table td {
+    padding: 12px 15px;
+    font-size: 12pt
+}
+table th {
+  background-color: #8e0e00
+}
+table tbody tr {
+    border-bottom: 3px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #ba8b02;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #8e0e00;
+}
+table tbody tr:hover {
+    font-weight: bold;
+    color: #009879;
+}
+td {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
