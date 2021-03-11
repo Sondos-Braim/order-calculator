@@ -1,10 +1,10 @@
 'use strict';
-let orders = []
-let table = document.createElement('table')
-let tbod 
-let deliveryFee
-let validation=document.createElement('p')
-form.appendChild(validation)
+let orders = [];
+let table = document.createElement('table');
+let tbod;
+let deliveryFee;
+let validation=document.createElement('p');
+form.appendChild(validation);
 function Order(name,item,quantity,price){
     this.name = name
     this.item = item
@@ -31,7 +31,7 @@ function getItems(){
     }
 }
 
-form.addEventListener('submit',ordering)
+form.addEventListener('submit',ordering);
 function ordering(event){
     event.preventDefault()  
     validation.textContent=''   
@@ -81,10 +81,19 @@ function tableHeader(){
     let row = document.createElement('tr')
     let firstCell = document.createElement('th')
     firstCell.textContent='Name'
+    let orderCell = document.createElement('th')
+    orderCell.textContent='Order'
+    let qCell = document.createElement('th')
+    qCell.textContent='Quantity'
     let seconedCell = document.createElement('th')
     seconedCell.textContent='Share'
+    let cancelCell = document.createElement('th')
+    cancelCell.textContent='Cancel'
     row.appendChild(firstCell)
+    row.appendChild(orderCell)
+    row.appendChild(qCell)
     row.appendChild(seconedCell)
+    row.appendChild(cancelCell)
     table.appendChild(row)
     result.appendChild(table)
 }
@@ -95,6 +104,10 @@ function tableBody(){
         let row = document.createElement('tr')
         let firstCell = document.createElement('td')
         firstCell.textContent=orders[x].name  
+        let orderCell= document.createElement('td')
+        orderCell.textContent= orders[x].item
+        let qCell= document.createElement('td')
+        qCell.textContent= orders[x].quantity
         let seconedCell = document.createElement('td')
         seconedCell.textContent= orders[x].share
         let deleteRow=document.createElement('td')
@@ -102,6 +115,8 @@ function tableBody(){
         row.id=x
         deleteRow.onclick = removeOrder
         row.appendChild(firstCell)
+        row.appendChild(orderCell)
+        row.appendChild(qCell)
         row.appendChild(seconedCell)
         row.appendChild(deleteRow)
         
@@ -120,6 +135,15 @@ function tableFooter(){
     let cell = document.createElement('th')
     cell.textContent = 'Total'
     footerRow.appendChild(cell)
+    let empty = document.createElement('th')
+    empty.textContent = ''  
+    footerRow.appendChild(empty)
+    let empty2 = document.createElement('th')
+    empty2.textContent = ''  
+    footerRow.appendChild(empty2)
+    let empty3 = document.createElement('th')
+    empty3.textContent = ''  
+    footerRow.appendChild(empty3)
     let totalCell = document.createElement('th')
     totalCell.textContent = total  
     footerRow.appendChild(totalCell)
